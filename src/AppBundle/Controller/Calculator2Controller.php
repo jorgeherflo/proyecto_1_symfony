@@ -26,7 +26,7 @@ class Calculator2Controller extends Controller {
         
         $current_year = date('Y');
         
-        $year = ($current_year -$age);
+        $year = ($current_year -$age) ;
         
         return $this->render('calculator/index.html.twig' , array ('year' => $year));
     }
